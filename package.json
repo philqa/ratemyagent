@@ -1,0 +1,52 @@
+{
+  "name": "ratemyagent",
+  "version": "1.0.0",
+  "description": "UI/API Tests for RateMyAgent",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc --project tsconfig.json",
+    "test": "webdriver-manager update && npm run compile && protractor protractor.conf.js --params.environment=prod",
+    "test:test": "npm run compile && protractor protractor.conf.js --params.environment=test",
+    "test:produsa": "npm run compile && protractor protractor.conf.js --params.environment=produsa",
+    "test:testusa": "npm run compile && protractor protractor.conf.js --params.environment=prodtest",
+    "test:local": "npm run compile && protractor protractor.conf.js --params.environment=local",
+    "test:api": "npm run compile && mocha build/tests/api/*-test.js --timeout 3000 --recursive --colors",
+    "webdriver-update": "webdriver-manager update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philqa/ratemyagent"
+  },
+  "contributors": [
+    "Phil Hicks"
+  ],
+  "devDependencies": {
+    "@types/jasmine": "^2.8.6",
+    "@types/lodash": "^4.14.104",
+    "@types/mocha": "^2.2.39",
+    "@types/request": "^0.0.44",
+    "body-parser": "^1.17.2",
+    "browser-sync": "^2.23.6",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^5.0.1",
+    "gulp": "^3.9.1",
+    "gulp-protractor": "^4.1.0",
+    "gulp-typescript": "^4.0.1",
+    "jasmine": "^3.1.0",
+    "jasmine-reporters": "^2.3.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "mocha": "^5.0.2",
+    "protractor": "^5.3.0",
+    "protractor-browser-logs": "^1.0.351",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "request": "^2.83.0",
+    "supertest": "^3.1.0",
+    "typescript": "^2.7.2",
+    "yargs": "^11.0.0"
+  },
+  "dependencies": {
+    "test": "^0.6.0",
+    "uuid": "^3.2.1"
+  }
+}
