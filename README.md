@@ -114,6 +114,16 @@ webdriver-manager update
 ### Problem: Selenium server/webdriver start seems to fail throwing an exit code 100
 Solution: most likely you haven't updated your Java version to 1.8, you can confirm this by running webdriver-manager start
 
+For reference, these tests were developed on the following machine:
+```
+Java 1.8.0_161
+Node v8.9.4
+npm 5.6.0
+Windows 10 Home
+Chrome Version 67.0.3396.99 (Official Build) (64-bit)
+chromedriver 2.40
+```
+
 ## Developer Remarks (TL;DR)
 
 It should be noted that I time-boxed this activity and the majority of my time was spent on the UI testing framework. In all honesty I actually prefer API testing, but I've established a basic approach using Mocha as requested.
