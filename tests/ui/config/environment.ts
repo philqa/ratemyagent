@@ -14,7 +14,7 @@ const ENV_CONFIG = {
         data: {
             email: 'phillipmarkhicks@gmail.com',
             username: 'phillipmarkhicks',
-            password: 't0ps3cr3t!'
+            password: '********'
         }
     },
     test: {
@@ -24,7 +24,7 @@ const ENV_CONFIG = {
         data: {
             email: 'phillipmarkhicks@gmail.com',
             username: 'phillipmarkhicks',
-            password: 't0ps3cr3t!'
+            password: '********'
         }
     },
     produsa: {
@@ -34,7 +34,7 @@ const ENV_CONFIG = {
         data: {
             email: 'phillipmarkhicks@gmail.com',
             username: 'phillipmarkhicks',
-            password: 't0ps3cr3t!'
+            password: '********'
         }
     },
     testusa: {
@@ -44,7 +44,7 @@ const ENV_CONFIG = {
         data: {
             email: 'phillipmarkhicks@gmail.com',
             username: 'phillipmarkhicks',
-            password: 't0ps3cr3t!'
+            password: '********'
         }
     },
     local: {
@@ -54,7 +54,7 @@ const ENV_CONFIG = {
         data: {
             email: 'phillipmarkhicks@gmail.com',
             username: 'phillipmarkhicks',
-            password: 't0ps3cr3t!'
+            password: '********'
         }
     }
 };
