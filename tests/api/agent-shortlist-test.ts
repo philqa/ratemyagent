@@ -10,7 +10,7 @@ let LOGIN_URL = API_BASE_URL + '/Account/Login';
 let AGENT_SHORTLIST_URL = API_BASE_URL + '/Users/Me/Shortlist/Agents';
 let LOGIN_DETAILS = {
     'email': 'phillipmarkhicks@gmail.com',
-    'password': 't0ps3cr3t!'
+    'password': '********'
 };
 
 describe('GET /Users/Me/Shortlist/Agents', () => {
